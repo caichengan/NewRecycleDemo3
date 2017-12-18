@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="match_parent"
+        android:text="retrofit的Get"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:text="retrofit的Post"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGetTWO"
+        android:layout_width="match_parent"
+        android:text="retrofit的连续调用"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnRxGetTWO"
+        android:layout_width="match_parent"
+        android:text="retrofit结合RxJava的连续调用"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/coordiation"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBBar"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="200dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/CollapsingToolbarlayout"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="60dp"
+            app:expandedTitleMarginStart="45dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgCollasping"
+                android:layout_width="wrap_content"
+                android:src="@drawable/mein"
+                android:layout_gravity="center_vertical"
+                android:fitsSystemWindows="true"
+
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+          app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_height="?attr/actionBarSize"/>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:background="@android:color/holo_blue_dark"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_behavior="com.diandianguanjia.newrecycledemo3.view.FootBehavior"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="自定义的behavior"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

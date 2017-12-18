@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/rxJava"
+        android:layout_width="match_parent"
+        android:text="rxJava同步实现观察者与被观察者的思想"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/rxJavaName"
+        android:layout_width="match_parent"
+        android:text="将字符数组的数据打印出来"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/rxJavaObservable"
+        android:layout_width="match_parent"
+        android:text="rxJava中的变换map"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/rxJavaOneChoose"
+        android:layout_width="match_parent"
+        android:text="rxJava中的防止用户过度点击（注册）"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/rxJavaShoppingCart"
+        android:layout_width="match_parent"
+        android:text="rxJava中的购物车-合并本来和网络数据"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/rxJavaBackTime"
+        android:layout_width="match_parent"
+        android:text="rxJava中的倒计时"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/BackTime"
+        android:layout_width="match_parent"
+        android:text="倒计时:"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/rxJavaBitmap"
+        android:layout_width="match_parent"
+        android:text="rxJava实现图片的三级缓存"
+
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/rxJavaRxBus"
+        android:layout_width="match_parent"
+        android:text="rxJava中RxBus的使用"
+
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

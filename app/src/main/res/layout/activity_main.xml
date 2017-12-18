@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recycleListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="同ListView功能的RecycleView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recycleGridView"
+            android:text="同GridView功能的RecycleView"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recycleViewMulite"
+            android:text="RecycleView的多布局功能"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recyclePuBu"
+            android:text="瀑布流的RecycleView"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recycleTabLayout"
+            android:text="TabLayout实现选项卡动态滑动"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/recycleNavigation"
+            android:text="Navigation实现的抽屉原理"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/layoutCoordinatorLayout"
+            android:text="CoordinatorLayout实现的ToorBar隐藏"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/CollapsingToolbarlayout"
+            android:text="CollapsingToolbarLayout实现的ToorBar折叠"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/behaviorlayout"
+            android:text="自定义Behavior实现的ToorBar折叠"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/realmlayout"
+            android:text="Realm数据库的使用"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Banner"
+            android:text="第三方实现轮播的使用"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
