@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    >
+
+
+
+<LinearLayout android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="@android:color/white"
     android:layout_height="match_parent"
@@ -199,4 +208,58 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mDataTimer"
+            android:text="时间日期的使用"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mDataTimerAddress"
+            android:text="时间日期农历和地址三级联动的使用"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mMenuPopup"
+            android:text="菜单悬浮菜单的使用"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
 </LinearLayout>
+</ScrollView>

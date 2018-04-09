@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="yyyy-MM-dd E hh:mm"
+        android:gravity="center"
+        android:id="@+id/time_select1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:text="yyyy-MM-dd hh:mm"
+        android:gravity="center"
+        android:id="@+id/time_select2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+    android:text="yyyy-MM-dd hh"
+    android:gravity="center"
+    android:id="@+id/time_select3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+    <TextView
+    android:text="yyyy-MM-dd"
+    android:gravity="center"
+    android:id="@+id/time_select4"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+    <TextView
+        android:text="hh:mm"
+        android:gravity="center"
+        android:id="@+id/time_select5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+
+
+</LinearLayout>

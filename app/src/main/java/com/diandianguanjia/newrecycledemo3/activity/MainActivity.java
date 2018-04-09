@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView realmlayout;
     private TextView recycleViewMulite;
     private TextView banner;
+    private TextView mDataTimer;
+    private TextView mDataTimerAddress;
+    private TextView mMenuPopup;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         realmlayout= (TextView) findViewById(R.id.realmlayout);
         recycleViewMulite= (TextView) findViewById(R.id.recycleViewMulite);
         banner= (TextView) findViewById(R.id.Banner);
+        mDataTimer= (TextView) findViewById(R.id.mDataTimer);
+        mDataTimerAddress= (TextView) findViewById(R.id.mDataTimerAddress);
+        mMenuPopup= (TextView) findViewById(R.id.mMenuPopup);
 
         recycleViewMulite.setOnClickListener(this);
         recycleListView.setOnClickListener(this);
@@ -63,6 +69,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         behaviorlayout.setOnClickListener(this);
         realmlayout.setOnClickListener(this);
         banner.setOnClickListener(this);
+        mDataTimer.setOnClickListener(this);
+        mDataTimerAddress.setOnClickListener(this);
+        mMenuPopup.setOnClickListener(this);
 
     }
 
@@ -132,6 +141,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 Intent intent10=new Intent(this,BannerActivity.class);
                 startActivity(intent10);
+                break;
+
+            case R.id.mDataTimer:
+
+                Intent intent11=new Intent(this,TimeDataActivity.class);
+                startActivity(intent11);
+                break;
+            case R.id.mDataTimerAddress:
+
+                Intent intent12=new Intent(this,TimeDataAddressActivity.class);
+                //Intent intent12=new Intent(this,JsonDataActivity.class);
+                startActivity(intent12);
+                break;
+            case R.id.mMenuPopup:
+                Intent intent13=new Intent(this,MenuPopupActivity.class);
+                //Intent intent12=new Intent(this,JsonDataActivity.class);
+                startActivity(intent13);
                 break;
         }
 

@@ -28,26 +28,17 @@ public class RealmActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         setContentView(R.layout.activity_realm);
-
        TextView tvRealm= (TextView) findViewById(R.id.realmhelper);
-
-
        //initDatas();
        initDatas2();
-
         tvRealm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 List<Realmzz> realmzzs = queryAll();
                 int size = realmzzs.size();
                 String name = realmzzs.get(0).getName();
                 Log.i(TAG, "---onClick: "+size+"--"+name);
-
-
             }
         });
 
@@ -55,43 +46,29 @@ public class RealmActivity extends AppCompatActivity{
 
     private List<Realmzz> queryAll() {
         RealmResults<Realmzz> list=myRealm.where(Realmzz.class).findAll();
-
-
-
         return myRealm.copyFromRealm(list);
     }
 
     private static final String TAG = "RealmActivity";
-
     private void initDatas() {
-
         myRealm = Realm.getDefaultInstance();
         myRealm.beginTransaction();
-
             Realmzz beam = myRealm.createObject(Realmzz.class);
             beam.setId("3");
             beam.setImgUrl("");
             beam.setName("暗黑无界"+10);
             beam.setPrice("$40");
-
         myRealm.commitTransaction();
     }
-
     private void initDatas2() {
-
         myRealm = Realm.getDefaultInstance();
-
             Realmzz beam =new Realmzz();
             beam.setImgUrl("");
             beam.setName("暗黑无界"+0);
             beam.setPrice("$40");
-
-
         myRealm.beginTransaction();
-
         myRealm.commitTransaction();
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();

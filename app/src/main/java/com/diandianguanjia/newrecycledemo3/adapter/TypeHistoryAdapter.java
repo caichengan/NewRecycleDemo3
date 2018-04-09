@@ -19,7 +19,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by 丁瑞 on 2017/1/3.
+ * Created on 2017/1/3.
  * 首页热议
  */
 public class TypeHistoryAdapter extends RecyclerView.Adapter<TypeHistoryAdapter.TypeHistoryHolder> {

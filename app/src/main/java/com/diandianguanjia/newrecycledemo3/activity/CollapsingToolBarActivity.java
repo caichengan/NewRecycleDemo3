@@ -37,21 +37,16 @@ public class CollapsingToolBarActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_collapsing_toolbar);
-
         coordiation= (CoordinatorLayout) findViewById(R.id.coordiation);
         appBBar= (AppBarLayout) findViewById(R.id.appBBar);
         collapsingToolbarlayout= (CollapsingToolbarLayout) findViewById(R.id.CollapsingToolbarlayout);
         imgCollasping= (ImageView) findViewById(R.id.imgCollasping);
-
         toolbar= (Toolbar) findViewById(R.id.toolBar);
         recyclerView= (RecyclerView) findViewById(R.id.recycle);
-
-
         setSupportActionBar(toolbar);
         collapsingToolbarlayout.setTitle("哆啦A梦");
         collapsingToolbarlayout.setCollapsedTitleTextColor(Color.RED);
         collapsingToolbarlayout.setBackgroundColor(Color.GRAY);
-
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(new RecycleViewAdapter(CollapsingToolBarActivity.this));
@@ -59,11 +54,8 @@ public class CollapsingToolBarActivity extends AppCompatActivity{
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         getMenuInflater().inflate(R.menu.toolbar, menu); //解析menu布局文件到menu
         return true;
-
-
     }
 
     @Override

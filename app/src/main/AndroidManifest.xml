@@ -51,6 +51,10 @@
             </intent-filter>-->
         </activity>
         <activity android:name=".activity.BannerActivity"/>
+        <activity android:name=".activity.TimeDataActivity"/>
+        <activity android:name=".activity.TimeDataAddressActivity"/>
+        <activity android:name=".activity.JsonDataActivity"/>
+        <activity android:name=".activity.MenuPopupActivity"/>
 
     </application>
 
