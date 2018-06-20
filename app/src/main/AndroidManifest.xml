@@ -36,6 +36,8 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
 
         <activity android:name=".activity.DistanceActivity"/>
+        <activity android:name=".activity.CoordinatorChuankeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity android:name=".activity.MessageActivity"/>
         <activity android:name=".activity.SettingActivity"/>
         <activity android:name=".activity.DialogActivity"/>
@@ -53,8 +55,8 @@
         <activity android:name=".activity.BannerActivity"/>
         <activity android:name=".activity.TimeDataActivity"/>
         <activity android:name=".activity.TimeDataAddressActivity"/>
-        <activity android:name=".activity.JsonDataActivity"/>
         <activity android:name=".activity.MenuPopupActivity"/>
+        <activity android:name=".activity.TimeSelectActivity"/>
 
     </application>
 

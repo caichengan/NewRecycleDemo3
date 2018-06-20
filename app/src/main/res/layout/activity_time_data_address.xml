@@ -4,11 +4,33 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="地址选择"
+        android:text="地址选择(一级二级三级自己设定)"
         android:gravity="center"
         android:id="@+id/address_select"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
+
+    <TextView
+        android:text="开源库地址选择三级联动"
+        android:gravity="center"
+        android:id="@+id/address_select2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="地址选择第三种二级联动"
+        android:gravity="center"
+        android:id="@+id/address_select3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="时间日期开源联动（年月日时分秒均可设）"
+        android:gravity="center"
+        android:id="@+id/address_select4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
 
 
 </LinearLayout>

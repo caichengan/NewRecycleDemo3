@@ -35,8 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView recycleViewMulite;
     private TextView banner;
     private TextView mDataTimer;
+    private TextView layoutCchuanke;
     private TextView mDataTimerAddress;
     private TextView mMenuPopup;
+    private TextView mTimeSelect;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +57,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recycleViewMulite= (TextView) findViewById(R.id.recycleViewMulite);
         banner= (TextView) findViewById(R.id.Banner);
         mDataTimer= (TextView) findViewById(R.id.mDataTimer);
+        layoutCchuanke= (TextView) findViewById(R.id.layoutCchuanke);
         mDataTimerAddress= (TextView) findViewById(R.id.mDataTimerAddress);
         mMenuPopup= (TextView) findViewById(R.id.mMenuPopup);
+        mTimeSelect= (TextView) findViewById(R.id.mTimeSelect);
 
         recycleViewMulite.setOnClickListener(this);
         recycleListView.setOnClickListener(this);
@@ -70,8 +74,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         realmlayout.setOnClickListener(this);
         banner.setOnClickListener(this);
         mDataTimer.setOnClickListener(this);
+        layoutCchuanke.setOnClickListener(this);
         mDataTimerAddress.setOnClickListener(this);
         mMenuPopup.setOnClickListener(this);
+        mTimeSelect.setOnClickListener(this);
 
     }
 
@@ -119,6 +125,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent6.putExtra("style","pubu");
                 startActivity(intent6);
                 break;
+
+            case R.id.layoutCchuanke:
+
+                Intent intent61=new Intent(this,CoordinatorChuankeActivity.class);
+                intent61.putExtra("style","pubu");
+                startActivity(intent61);
+                break;
             case R.id.CollapsingToolbarlayout:
 
                 Intent intent7=new Intent(this,CollapsingToolBarActivity.class);
@@ -151,13 +164,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.mDataTimerAddress:
 
                 Intent intent12=new Intent(this,TimeDataAddressActivity.class);
-                //Intent intent12=new Intent(this,JsonDataActivity.class);
                 startActivity(intent12);
                 break;
             case R.id.mMenuPopup:
                 Intent intent13=new Intent(this,MenuPopupActivity.class);
-                //Intent intent12=new Intent(this,JsonDataActivity.class);
                 startActivity(intent13);
+                break;
+            case R.id.mTimeSelect:
+                Intent intent14=new Intent(this,TimeSelectActivity.class);
+                startActivity(intent14);
                 break;
         }
 

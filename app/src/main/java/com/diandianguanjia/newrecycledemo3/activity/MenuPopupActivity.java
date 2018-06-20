@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,8 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.diandianguanjia.newrecycledemo3.R;
+
+import okio.Buffer;
 
 /**
  * Created by an on 2018/4/8.
@@ -32,6 +36,7 @@ public class MenuPopupActivity extends AppCompatActivity implements View.OnClick
 
 
         setContentView(R.layout.activity_menupop);
+
 
         TextView optionsMenu= (TextView) findViewById(R.id.optionsMenu);
         TextView contextMenu= (TextView) findViewById(R.id.contextMenu);
@@ -88,16 +93,46 @@ public class MenuPopupActivity extends AppCompatActivity implements View.OnClick
         //contentView 内容视图
         contentView = View.inflate(this, R.layout.content_popunwindow,null);
 
+        contentView.findViewById(R.id.back).setOnClickListener(this);
+        contentView.findViewById(R.id.collect).setOnClickListener(this);
+        contentView.findViewById(R.id.add).setOnClickListener(this);
         mWindow = new PopupWindow(contentView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
 
         //设置触摸popunwindow外面的区域是否可以使其消失
-        mWindow.setOutsideTouchable(true);
+        mWindow.setOutsideTouchable(false);
 
         //设置其背景
        // mWindow.setBackgroundDrawable(back);
         //设置触摸时有响应
         mWindow.setTouchable(true);
 
+        mWindow.showAtLocation(contentView, Gravity.CENTER,0,0);
+
+    }
+
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        switch (keyCode){
+
+            case KeyEvent.KEYCODE_MENU:
+                if (mWindow.isShowing()){
+                    mWindow.dismiss();
+                }else{
+                    mWindow.showAtLocation(contentView, Gravity.CENTER,0,0);
+                }
+            case KeyEvent.KEYCODE_BACK:
+                if (mWindow.isShowing()){
+                    mWindow.dismiss();
+                }
+                break;
+
+        }
+
+
+
+        return super.onKeyDown(keyCode, event);
 
     }
 

@@ -44,7 +44,7 @@ public class RecycleViewMyAdapter extends RecyclerView.Adapter<RecycleViewMyAdap
         this.mOnItenClickListener=mOnItenClickListener;
     }
 
-    public RecycleViewMyAdapter(String style,List<Integer> mHeights, List<String> mListData, RecycleListViewActivity mainActivity) {
+    public RecycleViewMyAdapter(String style,List<Integer> mHeights, List<String> mListData, Context mainActivity) {
 
         this.mHeights=mHeights;
         this.style=style;

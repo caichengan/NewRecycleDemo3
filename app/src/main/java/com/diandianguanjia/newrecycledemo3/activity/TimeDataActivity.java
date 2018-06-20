@@ -1,5 +1,6 @@
 package com.diandianguanjia.newrecycledemo3.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,7 @@ import java.util.Date;
 
 
 //https://github.com/caichengan/PickTime   参考网址日期选择控件
-public class TimeDataActivity extends AppCompatActivity implements View.OnClickListener {
+public class TimeDataActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

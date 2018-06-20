@@ -139,6 +139,22 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/layoutCchuanke"
+            android:text="CoordinatorLayout实现的实现创客端首页"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
             android:id="@+id/CollapsingToolbarlayout"
             android:text="CollapsingToolbarLayout实现的ToorBar折叠"
             android:layout_width="match_parent"
@@ -251,6 +267,24 @@
         <TextView
             android:id="@+id/mMenuPopup"
             android:text="菜单悬浮菜单的使用"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/lighter_gray"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mTimeSelect"
+            android:text="时间选择的使用"
             android:layout_width="match_parent"
             android:padding="10dp"
             android:background="@color/lighter_gray"
